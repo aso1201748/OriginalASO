@@ -11,4 +11,10 @@
         android:text="中吉"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="431dp"
+        android:src="@drawable/chuukichi" />
+
 </LinearLayout>

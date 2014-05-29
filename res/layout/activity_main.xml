@@ -9,6 +9,7 @@
     tools:context=".MainActivity" >
 
     <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
@@ -19,22 +20,40 @@
             android:layout_height="wrap_content"
             android:text="おみくじ"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <EditText
-            android:id="@+id/edtName"
-            android:layout_width="245dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName" >
-
-            <requestFocus />
-        </EditText>
-
-        <Button
-            android:id="@+id/btnOK"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="OK" />
-
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOK"
+        android:layout_alignLeft="@+id/btnOK"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtName"
+        android:layout_alignLeft="@+id/edtName"
+        android:layout_alignRight="@+id/edtName"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="28dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/omikuji" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="72dp"
+        android:text="OK" />
 
 </RelativeLayout>

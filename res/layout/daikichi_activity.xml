@@ -11,4 +11,11 @@
         android:text="大吉"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:src="@drawable/daikichi" />
+
 </LinearLayout>
