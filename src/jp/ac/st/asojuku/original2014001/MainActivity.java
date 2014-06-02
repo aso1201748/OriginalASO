@@ -80,6 +80,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 				startActivity(intent);
 				break;
 			}
+			intent.putExtra("name", inputMsg);
+			//次画面のアクティビティ起動
+			startActivity(intent);
 		}
 	}
 

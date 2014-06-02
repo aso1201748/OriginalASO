@@ -35,18 +35,6 @@
         <requestFocus />
     </EditText>
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/edtName"
-        android:layout_alignLeft="@+id/edtName"
-        android:layout_alignRight="@+id/edtName"
-        android:layout_below="@+id/linearLayout1"
-        android:layout_marginTop="28dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/omikuji" />
-
     <Button
         android:id="@+id/btnOK"
         android:layout_width="wrap_content"
